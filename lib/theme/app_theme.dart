@@ -8,13 +8,14 @@ enum AppTheme {
 final appThemeData = {
   AppTheme.Light: ThemeData(
     brightness: Brightness.light,
-    primaryColor: Colors.white,
-    scaffoldBackgroundColor: Colors.white,
+    primaryColor: const Color.fromARGB(255, 207, 207, 207),
+    scaffoldBackgroundColor: const Color.fromARGB(255, 207, 207, 207),
     hintColor: const Color.fromARGB(255, 16, 16, 16),
     colorScheme: const ColorScheme.light(
-      primary: Colors.white,
+      primary: Color.fromARGB(255, 207, 207, 207),
     ),
-    fontFamily: "GowunDodum",
+    fontFamily: 'NotoSans',
+    // fontFamily: "GowunDodum",
     textSelectionTheme: const TextSelectionThemeData(
       cursorColor: Color.fromARGB(255, 16, 16, 16),
     ),
@@ -23,11 +24,11 @@ final appThemeData = {
     brightness: Brightness.dark,
     primaryColor: const Color.fromARGB(255, 16, 16, 16),
     scaffoldBackgroundColor: Colors.black,
-    hintColor: Colors.white,
+    hintColor: const Color.fromARGB(255, 207, 207, 207),
     colorScheme: const ColorScheme.dark(
       primary: Color.fromARGB(255, 16, 16, 16),
     ),
-    fontFamily: "GowunDodum",
+    fontFamily: 'NotoSans',
     textSelectionTheme: const TextSelectionThemeData(
       cursorColor: Color.fromARGB(255, 207, 207, 207),
     ),

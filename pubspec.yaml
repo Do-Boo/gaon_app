@@ -90,6 +90,9 @@ flutter:
     - family: GowunDodum
       fonts:
         - asset: assets/fonts/GowunDodum.ttf
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

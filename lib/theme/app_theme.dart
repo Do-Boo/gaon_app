@@ -10,30 +10,26 @@ final appThemeData = {
     brightness: Brightness.light,
     primaryColor: Colors.white,
     scaffoldBackgroundColor: Colors.white,
-    hintColor: Colors.black,
+    hintColor: const Color.fromARGB(255, 16, 16, 16),
     colorScheme: const ColorScheme.light(
       primary: Colors.white,
     ),
     fontFamily: "GowunDodum",
     textSelectionTheme: const TextSelectionThemeData(
-      cursorColor: Colors.blue,
-      selectionColor: Colors.blue,
-      selectionHandleColor: Colors.green,
+      cursorColor: Color.fromARGB(255, 16, 16, 16),
     ),
   ),
   AppTheme.Dark: ThemeData(
     brightness: Brightness.dark,
-    primaryColor: Colors.black,
+    primaryColor: const Color.fromARGB(255, 16, 16, 16),
     scaffoldBackgroundColor: Colors.black,
     hintColor: Colors.white,
     colorScheme: const ColorScheme.dark(
-      primary: Colors.black,
+      primary: Color.fromARGB(255, 16, 16, 16),
     ),
     fontFamily: "GowunDodum",
     textSelectionTheme: const TextSelectionThemeData(
-      cursorColor: Colors.blue,
-      selectionColor: Colors.blue,
-      selectionHandleColor: Colors.green,
+      cursorColor: Color.fromARGB(255, 207, 207, 207),
     ),
   ),
 };

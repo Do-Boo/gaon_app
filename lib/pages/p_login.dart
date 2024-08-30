@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gaon_app/pages/p_main.dart';
 import 'package:gaon_app/widgets/w_button.dart';
+import 'package:get/get.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -25,7 +27,9 @@ class LoginPage extends StatelessWidget {
               _Textfield("비밀번호", theme),
               const SizedBox(height: 16),
               Button(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(() => const MainPage());
+                },
                 color: theme.hintColor.withOpacity(0.99),
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
                 borderRadius: const BorderRadius.all(Radius.circular(16)),

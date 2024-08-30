@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gaon_app/gets/g_theme_controller.dart';
 import 'package:gaon_app/pages/p_login.dart';
+import 'package:gaon_app/pages/p_main.dart';
 import 'package:gaon_app/responsive/r_desktop_scaffold.dart';
 import 'package:gaon_app/responsive/r_layout.dart';
 import 'package:gaon_app/responsive/r_mobile_scaffold.dart';
@@ -39,12 +40,17 @@ class MyApp extends StatelessWidget {
             name: '/',
             page: () => const BasePage(),
           ),
+          GetPage(
+            name: '/',
+            page: () => const MainPage(),
+            transition: Transition.zoom,
+          ),
         ],
         theme: appThemeData[AppTheme.Light],
         darkTheme: appThemeData[AppTheme.Dark],
         themeMode: ThemeController().themeMode,
         home: const BasePage(),
-        // debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: false,
       );
     });
   }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gaon_app/gets/g_theme_controller.dart';
 import 'package:gaon_app/pages/p_login.dart';
-import 'package:gaon_app/pages/p_main.dart';
+import 'package:gaon_app/pages/p_home.dart';
+import 'package:gaon_app/pages/p_search.dart';
 import 'package:gaon_app/responsive/r_desktop_scaffold.dart';
 import 'package:gaon_app/responsive/r_layout.dart';
 import 'package:gaon_app/responsive/r_mobile_scaffold.dart';
@@ -41,9 +42,14 @@ class MyApp extends StatelessWidget {
             page: () => const BasePage(),
           ),
           GetPage(
-            name: '/',
-            page: () => const MainPage(),
-            transition: Transition.zoom,
+            name: '/home',
+            page: () => const HomePage(),
+            transition: Transition.noTransition,
+          ),
+          GetPage(
+            name: '/search',
+            page: () => const SearchPage(),
+            transition: Transition.noTransition,
           ),
         ],
         theme: appThemeData[AppTheme.Light],

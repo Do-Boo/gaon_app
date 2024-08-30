@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gaon_app/pages/p_main.dart';
+import 'package:gaon_app/pages/p_home.dart';
 import 'package:gaon_app/widgets/w_button.dart';
 import 'package:get/get.dart';
 
@@ -28,7 +28,7 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 16),
               Button(
                 onPressed: () {
-                  Get.to(() => const MainPage());
+                  Get.to(() => const HomePage());
                 },
                 color: theme.hintColor.withOpacity(0.99),
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),

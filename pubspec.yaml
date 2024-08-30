@@ -47,6 +47,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   hugeicons: ^0.0.7
+  flutter_svg: ^2.0.10+1
 
 dev_dependencies:
   flutter_test:
@@ -94,6 +95,9 @@ flutter:
     - family: NotoSans
       fonts:
         - asset: assets/fonts/NotoSans.ttf
+    - family: ActiveIcons
+      fonts:
+        - asset: assets/fonts/ActiveIcons.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -1,83 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:gaon_app/widgets/w_button.dart';
-import 'package:get/get.dart';
+import 'package:gaon_app/widgets/w_navigationbar.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    Get.theme;
     return Scaffold(
       backgroundColor: theme.primaryColor,
       appBar: AppBar(),
-      bottomNavigationBar: NavigationBar(
-        destinations: [
-          Padding(
-            padding: const EdgeInsets.all(8),
-            child: Button(
-              onPressed: () {},
-              borderRadius: BorderRadius.circular(16),
-              child: HugeIcon(
-                icon: HugeIcons.strokeRoundedHome10,
-                color: theme.hintColor.withOpacity(0.5),
-                size: 32,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8),
-            child: Button(
-              onPressed: () {},
-              borderRadius: BorderRadius.circular(16),
-              child: HugeIcon(
-                icon: HugeIcons.strokeRoundedSearch01,
-                color: theme.hintColor.withOpacity(0.5),
-                size: 32,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8),
-            child: Button(
-              onPressed: () {},
-              color: theme.hintColor.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(16),
-              child: HugeIcon(
-                icon: HugeIcons.strokeRoundedPlusSign,
-                color: theme.hintColor.withOpacity(0.5),
-                size: 32,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8),
-            child: Button(
-              onPressed: () {},
-              borderRadius: BorderRadius.circular(16),
-              child: HugeIcon(
-                icon: HugeIcons.strokeRoundedFavourite,
-                color: theme.hintColor.withOpacity(0.5),
-                size: 32,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8),
-            child: Button(
-              onPressed: () {},
-              borderRadius: BorderRadius.circular(16),
-              child: HugeIcon(
-                icon: HugeIcons.strokeRoundedUser,
-                color: theme.hintColor.withOpacity(0.5),
-                size: 32,
-              ),
-            ),
-          ),
-        ],
-      ),
+      bottomNavigationBar: const CustomNavigationBar(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(

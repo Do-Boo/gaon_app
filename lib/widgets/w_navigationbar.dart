@@ -24,7 +24,7 @@ class CustomNavigationBar extends StatelessWidget {
 
     return Obx(() {
       return NavigationBar(
-        height: 72 - 8,
+        height: 64,
         destinations: List.generate(buttonData.length, (index) {
           return Padding(
             padding: const EdgeInsets.all(8),
